@@ -1,0 +1,26 @@
+entry = {
+	bundle = AppList;
+	cell = PSLinkCell;
+	isController = 1;
+	label = DKFLEXLoader;
+	ALSettingsPath = "/var/mobile/Library/Preferences/org.kostyshyn.DKFLEXLoader.plist";
+	ALSettingsKeyPrefix = "DKFLEXLoaderEnabled-";
+	ALChangeNotification = "org.kostyshyn.DKFLEXLoader.settingschanged";
+	ALSettingsDefaultValue = 0;
+	ALSectionDescriptors = (
+		{
+			title = "User Applications";
+			predicate = "(isSystemApplication = FALSE)";
+			"cell-class-name" = "ALSwitchCell";
+			"icon-size" = 29;
+			"suppress-hidden-apps" = 1;
+		},
+		{
+			title = "System Applications";
+			predicate = "(isSystemApplication = TRUE)";
+			"cell-class-name" = "ALSwitchCell";
+			"icon-size" = 29;
+			"suppress-hidden-apps" = 1; 
+		}
+	);
+};
