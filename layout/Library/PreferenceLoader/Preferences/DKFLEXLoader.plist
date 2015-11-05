@@ -1,6 +1,7 @@
 entry = {
 	bundle = AppList;
 	cell = PSLinkCell;
+	icon = "/Library/PreferenceLoader/Preferences/DKFLEXLoader.png";
 	isController = 1;
 	label = DKFLEXLoader;
 	ALSettingsPath = "/var/mobile/Library/Preferences/org.kostyshyn.DKFLEXLoader.plist";
