@@ -10,6 +10,7 @@ DKFLEXLoader_FRAMEWORKS = Foundation UIKit
 include $(THEOS_MAKE_PATH)/tweak.mk
 
 all::
+	$(shell mkdir -p layout/Library/Application\ Support/DKFLEXLoader/)
 	$(shell cp bin/universal/libFLEX.dylib layout/Library/Application\ Support/DKFLEXLoader/)
 
 after-install::
