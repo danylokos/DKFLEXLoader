@@ -107,7 +107,6 @@ FLEX/
 bin/
 src/
 theos/
-theos
 .theos/
 obj/
 _/
