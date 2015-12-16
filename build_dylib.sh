@@ -35,7 +35,7 @@ do
 		INCLUDES=${SDK_ROOT}/usr/include/
 		LIBRARIES=${SDK_ROOT}/usr/lib/
 
-		clang -I${INCLUDES} -F${FRAMEWORKS} -L${LIBRARIES} -Os -dynamiclib -isysroot ${SDK_ROOT} -arch ${ARCH} -fobjc-arc ${IOS_VERSION_MIN_FLAG}=${IOS_VERSION_MIN} -framework Foundation -framework UIKit -framework CoreGraphics -framework QuartzCore -framework ImageIO -lz ${INPUT} -o ${DIR}/${BIN_NAME}
+		clang -I${INCLUDES} -F${FRAMEWORKS} -L${LIBRARIES} -Os -dynamiclib -isysroot ${SDK_ROOT} -arch ${ARCH} -fobjc-arc ${IOS_VERSION_MIN_FLAG}=${IOS_VERSION_MIN} -framework Foundation -framework UIKit -framework CoreGraphics -framework QuartzCore -framework ImageIO -lz -lsqlite3 ${INPUT} -o ${DIR}/${BIN_NAME}
 done
 
 echo "Creating universal binary..."

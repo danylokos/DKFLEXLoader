@@ -1,7 +1,7 @@
 Package: org.kostyshyn.dkflexloader
 Name: DKFLEXLoader
 Depends: firmware (>= 7), mobilesubstrate, preferenceloader (>= 2.2), applist (>= 1.5.11)
-Version: 0.0.1
+Version: 2.2.0
 Architecture: iphoneos-arm
 Description: Flipboard FLEX dylib loader
 Maintainer: Danylo Kostyshyn
